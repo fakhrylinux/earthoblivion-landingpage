@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.cdnfonts.com/css/exton-free-trial');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+/*CSS Reset*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    /*scroll-padding-top: calc(4.5rem - 1px);*/
+    /*overflow-x: hidden;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    max-width: 100%;
+}
+
+body {
+    /*background: url("../images/background-693-1024.png");*/
+    background-color: #020E1C;
+    background-size: cover;
+    font-weight: normal;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    /*width: 100vw;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button-section {
+    width: 331px;
+    height: auto;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    /*background-color: #020E1C;*/
+    /*background-color: transparent;*/
+    background-color: rgba(2, 14, 28, 0.5);
+}
+
+#navbar.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #020E1C;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 163, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: yellow;
+}
+
+.navbar-toggler {
+    /*border-color: rgb(255,102,203);*/
+    border-color: transparent;
+    /*color: #FDA31E;*/
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.topnav {
+    /*overflow: hidden;*/
+    /*background-color: #020E1C;*/
+}
+
+/*.topnav li {*/
+/*    float: left;*/
+/*    display: block;*/
+/*    color: black;*/
+/*    text-align: center;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*    font-size: 17px;*/
+/*    border-bottom: 3px solid transparent;*/
+/*}*/
+
+/*.topnav a:hover {*/
+/*    border-bottom: 8px solid #97D4FC;*/
+/*    border-left: 8px solid transparent;*/
+/*    border-right: 8px solid transparent;*/
+/*}*/
+
+.topnav li .active {
+    border-bottom: 8px solid #97D4FC;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+@media screen and (max-width: 575px) {
+    /*html, body {*/
+    /*    overflow-x: hidden;*/
+    /*}*/
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*bottom: 0;*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        /*font-size: 4rem;*/
+        font-size: 150%;
+    }
+
+    header.masthead .header-title {
+        top: 22rem;
+        /*left: 1rem;*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 8em;
+    }
+
+    section#faq span.faq1 {
+        width: 100%;
+    }
+
+    section#faq div.white-ruler {
+        width: 0;
+    }
+}
+
+/*Medium display 576px - 767px*/
+@media screen and (min-width: 576px) {
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        font-size: 4rem;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*bottom: 0;*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header.masthead .header-title {
+        /*top: 22rem;*/
+        top: 40%;
+        /*left: 1rem;*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 16em;
+    }
+
+    section#faq span {
+        /*white-space: nowrap;*/
+    }
+
+    section#faq span.faq1 {
+        width: 100%;
+    }
+
+    section#faq div.white-ruler {
+        /*width: 100%;*/
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        font-size: 5rem;
+    }
+
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header.masthead .header-title {
+        /*bottom: 2rem;*/
+        /*left: 1rem;*/
+        /*top: 40rem;*/
+        top: 55%;
+        /*left: 8rem;*/
+        left: 10%;
+        /*left: 0;*/
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 19em;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    section#faq span {
+        white-space: nowrap;
+    }
+
+    section#faq span.faq1 {
+        width: auto;
+    }
+
+    section#faq div.white-ruler {
+        width: 100%;
+        /*width: auto;*/
+    }
+}
+
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(8, 27, 11, 0.3);
+    z-index: 2;
+    /*opacity: 0.5;*/
+    /*z-index: 1;*/
+}
+
+
+header.masthead > div > div > p {
+    /*font-family: "Exton Free Trial", monospace;*/
+    /*font-size: 3.75rem;*/
+    /*font-size: 4.5vw;*/
+}
+
+/*Full Width Video CSS End*/
+
+header.masthead h1, header.masthead .h1 {
+    /*font-size: 2.25rem;*/
+}
+
+
+/*section.page-section {*/
+/*    padding-top: 90px;*/
+/*}*/
+
+
+section.page-section {
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
+}
+
+section#overview div.container {
+    max-width: 1560px;
+}
+
+section.page-section#overview {
+    background-image: url("../images/overview-background.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    /*opacity: 40%;*/
+    background-size: cover;
+}
+
+section.page-section#overview p.what-is {
+    font-family: "Lato Black", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+section.page-section#overview p.why-chronofi {
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+    /*letter-spacing: 2em;*/
+}
+
+section.page-section#overview p {
+    font-family: "Lato Black", sans-serif;
+    font-size: 20px;
+}
+
+
+section.page-section#ecosystem {
+    background-image: url("../images/ecosystem-background.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    background-size: cover;
+}
+
+section.page-section#features {
+    background-image: url("../images/background-gamemodes.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    /*opacity: 40%;*/
+    background-size: cover;
+}
+
+section.page-section#features .subtitle {
+    font-family: Montserrat, sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+section.page-section#features .content {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.125rem;
+}
+
+/*Characters Carousel*/
+.carousel /*slider */
+{
+    position: relative;
+}
+
+.carousel .carousel-item {
+    transition: none;
+}
+
+.carousel .carousel-indicators /* indicator wrapper*/
+{
+    position: relative;
+    bottom: 0;
+    /*left: 0px;*/
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    /*width: 100%;*/
+    display: flex; /* this is for indicators  */
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+}
+
+#headcarousel_container .carousel-indicators li /* indicators*/
+{
+    flex-grow: 1; /* make all indicator li similarly stretched */
+    height: 40px;
+    border-radius: 2px;
+}
+
+#charscarousel .carousel-indicators button.active {
+    /*background-color: rgba(251, 222, 87, 0.5); !* changes indicators color when it is active*!*/
+    background-color: #4A3071;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel .charbox {
+    width: 12.5rem;
+    height: 3.125rem;
+    background-color: #9685f2;
+    border-radius: 2px;
+}
+
+.carousel .charbox:hover {
+    width: 12.5rem;
+    height: 3.125rem;
+    background-color: #B687FF;
+    border-radius: 2px;
+}
+
+
+button.btn {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-underline: none;
+    letter-spacing: 2px;
+}
+
+button.btn:hover {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-underline: none;
+    letter-spacing: 2px;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.char-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.char-desc {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    text-indent: 24px;
+}
+
+/*Characters Carousel end*/
+
+section.page-section#roadmap {
+    background-image: url("../images/background-roadmap.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    /*opacity: 40%;*/
+    background-size: cover;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.icon-why {
+    width: 15em;
+    max-width: 50%;
+    height: auto;
+}
+
+.text-why {
+    max-width: 50%;
+}
+
+section#features img.rotate {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    transition: 1s;
+}
+
+section#features img.icon-feature {
+    top: 46px;
+}
+
+section#features div.inner {
+    top: 0;
+}
+
+section#features div.inner img {
+    top: -50%;
+}
+
+section#features img.text-box {
+    /*width: 315px;*/
+    /*height: 325px;*/
+    /*object-fit: none;*/
+}
+
+section#features div img.spin {
+    animation: spin 0.75s infinite linear;
+}
+
+.spin::before,
+.spin::after {
+    left: -2px;
+    top: -2px;
+    display: none;
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    border-radius: inherit;
+}
+
+#teaser {
+    width: 1040px;
+    height: auto;
+}
+
+.chronofitext {
+    color: #FDA31E;
+}
+
+figure {
+    position: relative
+}
+
+figcaption {
+    position: absolute;
+    /*width: 200px;*/
+    line-height: 150px;
+    text-align: center;
+    left: 150px;
+    top: -25px;
+    /*text-shadow: 0 0 1px white;*/
+    font-size: 24px;
+    /*font-weight:bold;*/
+}
+
+.container-image {
+    border: solid red 2px;
+    width: 1090px;
+    height: auto;
+    align-self: center;
+    place-content: center;
+}
+
+.full-width-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.full-width-image img {
+    width: 100%;
+}
+
+/*.flickity-prev-next-button {*/
+/*    bottom: 6%;*/
+/*}*/
+
+/* smaller, dark, rounded square */
+button.flickity-button.flickity-prev-next-button.previous {
+    width: 57px;
+    height: 57px;
+    border-radius: 5px;
+    background: #996f19;
+}
+
+button.flickity-button.flickity-prev-next-button.next {
+    width: 57px;
+    height: 57px;
+    border-radius: 5px;
+    background: #996f19;
+}
+
+button.flickity-button.flickity-prev-next-button:hover {
+    background: #ffbc33;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    /*fill: #F7A008;*/
+    fill: #ffa200;
+}
+
+section#gameplay .flickity-prev-next-button {
+    top: 85%;
+    -webkit-transform: none;
+    transform: none;
+}
+
+/*.flickity-prev-next-button.previous {*/
+/*    left: auto;*/
+/*    right: 60px;*/
+/*}*/
+
+/*.flickity-prev-next-button.next {*/
+/*    right: 10px;*/
+/*}*/
+
+.flickity-button {
+    /*display: none;*/
+    /*background: rgba(0);*/
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+    fill: transparent;
+}
+
+button.flickity-prev-next-button.previous {
+    /*background-image: url("../images/arrow-left.svg");*/
+}
+
+/*section#team-carousel div.carousel-cell {*/
+/*    width: 12.5em;*/
+/*}*/
+
+section#advisor div.advisor {
+    width: 12.5em;
+}
+
+section#faq {
+    background-image: url("../images/background-faq.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    background-size: cover;
+}
+
+section#faq p.faq-subtitle {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+}
+
+section#faq div.faq-subtitle span.faq {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section#faq div.faq-subtitle i.faq-arrow {
+    font-size: 3rem;
+}
+
+section#faq div.faq-question {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+section#faq div.faq-content {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.25rem;
+    line-height: 27px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+section#faq span:after {
+
+}
+
+section#contact p {
+    font-family: Iceland, sans-serif;
+    font-size: 2.375rem;
+}
+
+.accordion-header {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    padding: 0;
+    /*height: auto;*/
+}
+
+.accordion-button {
+    width: 20%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.accordion-button:not(.collapsed):after {
+    background-image: url("../images/caret-down-solid-white.svg");
+    margin-left: 2rem;
+    height: 2rem;
+    transform: none;
+    padding: 0;
+}
+
+.accordion-button.collapsed:after {
+    background-image: url("../images/caret-right-solid-white.svg");
+    margin-left: 2rem;
+    height: 2rem;
+    padding: 0;
+}
+
+footer#footer div.container-fluid {
+    max-width: 80em;
+}
+
+#logo {
+    margin-top: 25px;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+footer#footer div.logo {
+    width: 10.5em;
+}
+
+footer#footer {
+    background-image: linear-gradient(#010911, #05172d);
+}
+
+#footer p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    /*line-height: ;*/
+}
+
+footer div.coming-soon {
+    background-color: #002550;
+}
+
+footer div.coming-soon p.coming-soon-title {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer div.coming-soon p.coming-soon-content {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+footer div.coming-soon div#invest {
+    background-color: #001834;
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.copyright {
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
+    /*background-color: black;*/
+    height: 71px;
+}
+
+.copyright p {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 1.25rem;
+}
+
+/*a.icon:hover {*/
+/*    background-color: #FDA31E;*/
+/*}*/
+
+a.socmed-icon:hover {
+    transform: scale(1.1);
+}

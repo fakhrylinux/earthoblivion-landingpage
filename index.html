@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="NFT based game where you can collect, earn, win
+      display your NFTs while playing and socializing with your friends">
+    <meta name="DC.title" content="The ChronoFi - An NFT Avatar Project for Lovers of Chronofi Inu">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-icons.css">-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/flickity.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+          integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous">
+    <title>Earth Oblivion</title>
+</head>
+<body id="home">
+<!--Navigation-->
+<nav class="navbar navbar-dark navbar-expand-md navbar-custom fixed-top mb-5 navbar-shrink" id="navbar">
+    <!--    <div class="container-fluid px-xxl-5 d-flex justify-content-between">-->
+    <div class="container-fluid justify-content-center">
+        <div class="row w-100 justify-content-center justify-content-lg-between align-items-center">
+            <div class="col-12 col-lg-3 text-center">
+                <a class="navbar-brand ps-xxl-5" href="#">
+                    <img src="assets/images/logo.png" alt="logo" width="100" height="auto">
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-6 text-center">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="font-size: 2rem;">
+                <!--            <i class="bi bi-list"></i>-->
+                            </span>
+                </button>
+
+                <!--                <div class="collapse navbar-collapse justify-content-end pe-xxl-5" id="navbarResponsive" style="border: 1px yellowgreen solid">-->
+                <div class="collapse navbar-collapse justify-content-center pe-xxl-5" id="navbarResponsive">
+                    <ul class="navbar-nav my-2 my-lg-0 topnav">
+                        <li class="nav-item d-inline-flex justify-content-center " style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor active" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor"
+                               href="#characters">Characters</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light text-white anchor" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center dropdown" style="padding: 8px">
+                            <a class="nav-link d-inline-flex link-light dropdown-toggle text-white" role="button"
+                               id="aboutMenu"
+                               data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutMenu" style="background-color: #97D4FC">
+                                <li class="p-2"><a class="dropdown-item" href="#">Whitepaper</a></li>
+                                <hr style="width: 80%; margin: auto; height: 2px">
+                                <li class="p-2"><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <hr style="width: 80%; margin: auto; height: 2px">
+                                <li class="p-2"><a class="dropdown-item" href="#">One Page</a></li>
+                                <hr style="width: 80%; margin: auto; height: 2px">
+                                <li class="p-2"><a class="dropdown-item" href="#">PitchDesk</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--Masthead-->
+<header class="masthead py-0">
+    <!--    <div class="">-->
+    <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/video/chronofi.mp4" type="video/mp4">
+    </video>
+    <!--    </div>-->
+    <!--    <div class="border align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5 pb-5">-->
+    <div class="header-title align-items-end position-absolute">
+        <div class="mb-3 text-center text-lg-start">
+            <p class="text-white lh-1">First Action Fantasy MMORPG<br/>CRYPTO GAME ON BLOCKCHAIN</p>
+        </div>
+        <div class="text-center text-lg-start">
+            <img id="playnow" src="assets/images/playnow-btn.png">
+        </div>
+    </div>
+</header>
+
+<!--Overview-->
+<section class="page-section" id="overview" style="border: 1px solid transparent">
+    <div class="container about pt-5">
+        <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-overview.png" alt="">
+            </div>
+            <div class="row w-100 mx-auto mb-5 align-items-center">
+                <div class="col-12 col-lg-6 justify-content-center mx-auto">
+                    <img src="assets/images/overview-box.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div>
+                        <dl>
+                            <p class=" text-lg-start text-white mt-2 what-is" style="text-indent: 25px">
+                                Earth Oblivion is a Sci-Fi Action Fantasy MMORPG NFT game developed in Unity Engine.
+                                Players
+                                engage in fierce multi battles in the expansive Sci-Fi open-world game. Earth Oblivion
+                                is an
+                                all-out battle of skills where the best players constantly struggle to beat other
+                                players to
+                                earn more rewards. Earth Oblivion is being developed for PC, with iOS and Android
+                                cross-platform
+                                multiplayer in the future.
+                            </p>
+                            <p class=" text-lg-start text-white mt-2 what-is" style="text-indent: 25px">
+                                EARTH OBLIVION receives new content, balance patches and cash shop items on a monthly
+                                basis.
+                                Major expansions that include several new Dawn, Nests, new classes, multiple new
+                                features,
+                                extensive class adjustments and a raise on the level cap take place every year. Players
+                                can
+                                battle, collect, and build a robot.
+                            </p>
+                        </dl>
+
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="https://www.youtube.com/watch?v=Z7D4mRC84HQ" target="_blank">
+                            <img src="assets/images/watch-trailer.png" alt="watch trailer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Why Chronofi-->
+        <div class="text-center d-flex flex-column my-5">
+            <div class="d-flex justify-content-center mb-5">
+                <p class="text-light">About Earth Oblivion</p>
+            </div>
+
+            <div class="row mx-auto justify-content-center">
+                <div class="col-6 mb-5">
+                    <img src="assets/images/deflationary-1x.png" alt="">
+                </div>
+                <div class="col-6 mb-5">
+                    <img src="assets/images/multiplayer-nft-1x.png" alt="">
+                </div>
+                <div class="col-6 mb-5">
+                    <img src="assets/images/featuring-1x.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--Game Modes-->
+<section class="page-section pb-5 border-0" id="features">
+    <div class="container pt-5 preloadSection">
+        <div class="row justify-content-center text-center mx-auto">
+            <div class="px-0 mb-5 col-lg-8 text-center justify-content-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-gamemodes.png" alt="">
+            </div>
+        </div>
+
+        <!--PvP-->
+        <div class="row mx-auto">
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold subtitle">PVP</p><br>
+                <p class="text-white content">
+                    EARTH OBLIVION incorporates non-targeting system gameplay to create a fast-paced
+                    action-filled experience. Players choose from a range of robot classes, characters that
+                    are of the EARTH OBLIVIN storyline that can equip customizable gear and weapons.
+                    Characters exist in one world Zero Dawn, which resulted from Nexon uniting all 3 worlds
+                    to unit the characters. Devastating skills can also be learned, to increase one's power
+                    when defeating monsters in instance Zero Dawn or defeating other players in PvP.
+                    EARTH OBLIVION also has the advantage of being nearly completely skill-base, with
+                    lower level characters being able to defeat high level characters in PvP with skill alone.
+                    This allows a more experienced player that is of a lower level to dominate a less
+                    experienced player of a higher level player in PvP.
+                </p>
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-pvp.png">
+            </div>
+        </div>
+        <!--Combat in Player-->
+        <div class="row">
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-combat.png">
+            </div>
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold text-end subtitle">Combat In Player VS Environment</p><br>
+                <p class="text-white text-end content">
+                    In Earth Oblivion, players fight groups of monsters using skills and attacks received by
+                    class trainers throughout the game. The monsters drop money, collectables, materials,
+                    weapons or equipment that can be used by the player, sold, traded or thrown away.
+                </p>
+            </div>
+        </div>
+        <!--In-game Shop-->
+        <div class="row">
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold subtitle">In-game Shop</p><br>
+                <p class="text-white content">
+                    Where players use real-life currency to purchase equipment not widely available in-game. Special
+                    items can also help in the development of the charactes such as
+                    Approval Stamps and Protection items. Player can also costumes, cosmetics to
+                    personalise their character.
+                </p>
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-shop.png">
+            </div>
+        </div>
+        <!--Tournaments-->
+        <div class="row">
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-tournament.png">
+            </div>
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold text-end subtitle">Free and Paid Tournaments</p><br>
+                <p class="text-white text-end content">
+                    FREE TOURNAMENTS <br>
+                    Tournament creator originates the tournaments and establishes the prize pool. The
+                    prize pool is $XVION denominated and serves as an incentive for gamers to join the
+                    tournament. While they play for free. Gamers stake tokens at EARTH OBLIVION in order
+                    to participate in the Free Tournaments. Winning players receive a set portion of the
+                    prize pool (~85% by default).
+                </p>
+                <br>
+                <p class="text-white text-end content">
+                    PAID TOURNAMENT <br>
+                    Tournament creator sets up the tournament and the prize pool target size. Creating a
+                    tournament requires having XVION staked. Gamers have to put up a XVION prize pool
+                    (that can be delegated) effectively depositing a fixed minimum contribution or a higher
+                    one. The amount contributed will define one's pro-rata allocation shall he or she be
+                    eligible (by e.g. winning the tournament). ~85% of the total prize pool is distributed back
+                    across the winning players.
+                </p>
+            </div>
+        </div>
+        <!--Guild-->
+        <div class="row">
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold subtitle">Guild</p><br>
+                <p class="text-white content">
+                    A guild is an organized group of more than 10 characters gatherd under one name.
+                    Unlike parties which are usually formed only for the necessity of accessing an instance
+                    with more members, guilds are a more stable group that not only allows easier
+                    formation of parties for dungeon and nest runs but also provides an environment for
+                    social interaction between players.
+                </p>
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-guild.png">
+            </div>
+        </div>
+        <!--Party-->
+        <div class="row">
+            <div class="col-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/gamemode-party.png">
+            </div>
+            <div class="col-7 py-5">
+                <p class="text-white fw-bold text-end subtitle">Party</p><br>
+                <p class="text-white text-end content">
+                    A party is a group of up to four players who enter a dungeon. Parties can benefit from
+                    having a separate communication channel within the party, and sharing and managing
+                    items dropped by mobs.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Characters CLASSES-->
+<section class="page-section" id="characters">
+    <div class="container pt-5 pb-5 preloadSection">
+        <div class="text-center d-flex flex-column">
+            <div class="mb-5 col-lg-8 text-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-characters.png" alt="">
+            </div>
+        </div>
+
+        <div id="charscarousel" class="carousel" data-bs-interval="false">
+
+
+            <!--Wrapper for slide-->
+            <div class="carousel-inner">
+                <!--Warrior-->
+                <div class="carousel-item active">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Warrior</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Archer-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Archer</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sorcerer-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Sorcerer</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cleric-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Cleric</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Academic-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Academic</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Kali-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Kali</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Assasin-->
+                <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col-5 text-center">
+
+                            <img class="img-char" src="assets/images/char-warrior.png" alt="warrior">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute bottom-0">
+                                <p class="text-white char-title mb-4">Assasin</p>
+                                <p class="text-white char-desc mt-4">
+                                    Warriors are nimble fighters. They specialize in close-combat tactics.
+                                    In using the way of the sword, the are quick enough to dash into the
+                                    battlefield and deal massive amounts of damage to a single enemy with
+                                    unparalelled speed than any of the other classes. Wielding an axe or a
+                                    hammer, they can heavily damage an enemy with their slow, yet
+                                    monstrous abilities, capable of destroying even a heavily armored
+                                    opponent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--box link-->
+            <div class="carousel-indicators my-5">
+                <button type="button" class="btn active charbox"
+                        data-bs-target="#charscarousel" data-bs-slide-to="0">
+                    Warrior
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="1">
+                    Archer
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="2">
+                    Sorcerer
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="3">
+                    Cleric
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="4">
+                    Academic
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="5">
+                    Kali
+                </button>
+                <button type="button" class="btn charbox" data-bs-target="#charscarousel"
+                        data-bs-slide-to="6">
+                    Assasin
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!--Roadmap-->
+<section class="page-section" id="roadmap">
+    <div class="container text-center pt-5 pb-5">
+        <div class="text-center d-flex flex-column">
+            <div class="col-lg-8 text-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-roadmap.png" alt="">
+            </div>
+        </div>
+        <div class="text-center my-5">
+            <object data="assets/images/roadmap-1.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
+</section>
+
+<!--Tokenomic-->
+<section class="page-section" id="tokenomic">
+    <div class="container pt-5 pb-5 text-center">
+        <div class="text-center d-flex flex-column">
+            <div class="col-lg-8 text-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-tokenomic.png" alt="">
+            </div>
+        </div>
+        <div class="text-center my-5">
+            <div class="row">
+                <div class="col-7">
+                    <img src="assets/images/tokenomic-bar.png">
+                    <img src="assets/images/tokenomic-coin.png">
+                </div>
+                <div class="col-5">
+                    <img src="assets/images/tokenomic-allocation.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Backer-->
+<section class="page-section" id="backer">
+    <div class="container text-center pt-5 pb-5">
+        <div class="text-center d-flex flex-column">
+            <div class="col-lg-8 text-center button-section">
+                <img class="mt-5 mb-5" src="assets/images/title-partners.png" alt="">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://polygonstudios.com/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/polygon.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://lightningprotocol.finance/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/lightning.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://erax.io/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/erax.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://afkdao.io/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/logo-afk.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="http://www.formless.me/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/logo-formless.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://astronaut.to/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/astronaut.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://herogemsventure.com/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/logo-herogems.png" alt="" loading="lazy">
+                </a>
+            </div>
+
+
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://saulidity.com/" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/saulidity.png" alt="" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 col-sm-6 text-center my-4 d-flex align-items-center justify-content-center">
+                <a href="https://t.me/Komunitaskripto" target="_blank">
+                    <img class="img-fluid lazy" src="assets/images/logo-kriptonesia.png" alt="" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Team-->
+<section class="page-section" id="team">
+    <div class="container pt-5 pb-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center mx-auto">
+            <div class="px-0 mb-5 col-lg-8 text-center button-section justify-content-center">
+                <img class="mt-5 mb-5" src="assets/images/title-team.png">
+            </div>
+        </div>
+
+        <div class="row text-center mx-auto mb-5 justify-content-center">
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-irvan.png" alt="irvan">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Irvan M</span>
+                    <br>CEO & Founder
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-yuliana.png" alt="yuliana">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Yuliana KH Q</span>
+                    <br>CTO & Co-Founder
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-alfan.png" alt="alfan">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Alfan M</span>
+                    <br>COO & Co-Founder
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center mx-auto my-5 justify-content-center">
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-fakhry.png" alt="fakhry">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">M Fakhry</span>
+                    <br>Lead Programmer
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-zummia.png" alt="zummia">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Zummia F</span>
+                    <br>CMO
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-taufik.png" alt="taufik">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Taufik K</span>
+                    <br>2D/3D Design
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-fikri.png" alt="fikri">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Fikri A</span>
+                    <br>2D/3D Design
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="lazy" src="assets/images/team-tegar.png" alt="tegar">
+                <p class="text-center text-white mt-3">
+                    <span class="fw-bold">Tegar S</span>
+                    <br>UI/UX
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!--Advisor-->
+<section class="page-section" id="advisor">
+    <div class="container-fluid pt-5 pb-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center mx-auto mt-5">
+            <div class="px-0 mb-5 col-lg-8 text-center button-section justify-content-center">
+                <img class="mt-5 mb-5" src="assets/images/title-advisor.png">
+            </div>
+
+            <div class="row text-center mx-auto mb-5 justify-content-center">
+                <div class="col-2">
+                    <img class="lazy" src="assets/images/advisor-timo.png" alt="timo">
+                    <p class="text-center text-white mt-3">
+                        <span class="fw-bold">Timo Trippler</span>
+                        <br>ICO Advisor
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FAQ-->
+<section id="faq">
+    <div class="container-fluid py-5 d-flex align-items-center text-center justify-content-center">
+        <div class="d-flex mt-5">
+            <img class="mt-5 mb-5" src="assets/images/title-faq.png" alt="faq">
+        </div>
+    </div>
+
+    <div class=" container accordion accordion-flush pb-5" id="accordionFlushExample">
+        <!--FAQ 1-->
+        <div class="accordion-item my-2" style="background-color: transparent; color: white">
+            <div class="accordion-header faq-subtitle d-flex align-items-center mb-2" id="flush-headingOne">
+                <button class="accordion-button collapsed float-start" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                        style="background-color: transparent; color: white;">
+                    <span class="faq faq1">
+                        Question 1
+                    </span>
+                </button>
+                <div class="d-flex faq-question">How to build skill?</div>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                 aria-labelledby="flush-headingOne"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-content">
+                    CHRONOFi is the first 2D & 3D decentralized NFT Play-to-Earn on POLYGON Network. We are a
+                    blockchain-based NFT adventure game with 2D turn-based and 3D MMORPG Play-to-Earn mechanics, in
+                    which
+                    anyone can earn tokens through skilled gameplay and contributions to the ecosystem. Players can
+                    engage
+                    in battle, collect items, and construct robots. Allowing CHRONOFi community developers to create
+                    their
+                    own tools and experiences in the CHRONOFiverse. Each unique NFT Robots will hold its intrinsic
+                    value
+                    complimenting the rarity, which can be traded in the game which will aggregate the floor price
+                    according
+                    to its attributes and activity.
+                </div>
+            </div>
+        </div>
+
+        <!--FAQ 2-->
+        <div class="accordion-item my-2" style="background-color: transparent; color: white">
+            <div class="accordion-header faq-subtitle d-flex align-items-center" id="flush-headingTwo">
+                <button class="accordion-button collapsed float-start" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                        style="background-color: transparent; color: white;">
+                    <span class="faq faq1">
+                        Question 2
+                    </span>
+                </button>
+                <div class="d-flex faq-question">How to set equipment?</div>
+            </div>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                 aria-labelledby="flush-headingTwo"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-content">
+                    CHRONOFi is the first 2D & 3D decentralized NFT Play-to-Earn on POLYGON Network. We are a
+                    blockchain-based NFT adventure game with 2D turn-based and 3D MMORPG Play-to-Earn mechanics, in
+                    which
+                    anyone can earn tokens through skilled gameplay and contributions to the ecosystem. Players can
+                    engage
+                    in battle, collect items, and construct robots. Allowing CHRONOFi community developers to create
+                    their
+                    own tools and experiences in the CHRONOFiverse. Each unique NFT Robots will hold its intrinsic
+                    value
+                    complimenting the rarity, which can be traded in the game which will aggregate the floor price
+                    according
+                    to its attributes and activity.
+                </div>
+            </div>
+        </div>
+
+        <!--FAQ 3-->
+        <div class="accordion-item my-2" style="background-color: transparent; color: white">
+            <div class="accordion-header faq-subtitle d-flex align-items-center" id="flush-headingThree">
+                <button class="accordion-button collapsed float-start" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                        style="background-color: transparent; color: white;">
+                    <span class="faq faq1">
+                        Question 2
+                    </span>
+                </button>
+                <div class="d-flex faq-question">How to levelling character?</div>
+            </div>
+            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                 aria-labelledby="flush-headingThree"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body faq-content">
+                    CHRONOFi is the first 2D & 3D decentralized NFT Play-to-Earn on POLYGON Network. We are a
+                    blockchain-based NFT adventure game with 2D turn-based and 3D MMORPG Play-to-Earn mechanics, in
+                    which
+                    anyone can earn tokens through skilled gameplay and contributions to the ecosystem. Players can
+                    engage
+                    in battle, collect items, and construct robots. Allowing CHRONOFi community developers to create
+                    their
+                    own tools and experiences in the CHRONOFiverse. Each unique NFT Robots will hold its intrinsic
+                    value
+                    complimenting the rarity, which can be traded in the game which will aggregate the floor price
+                    according
+                    to its attributes and activity.
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!--Contact-->
+<section id="contact">
+    <div class="container-fluid d-flex align-items-center text-center justify-content-center">
+        <div class="d-flex p-4">
+            <p class="text-white">
+                more info: hello@earthoblivion.io
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="footer mt-auto pb-0 gradient" id="footer">
+    <div class="container-fluid py-5">
+        <div class="row mx-auto">
+            <div class="col-lg-4 col-md-12 pt-4">
+
+                <div class="d-flex flex-column align-items-center align-items-xxl-start">
+                    <div class="d-inline-flex logo mx-auto">
+                        <img class="w-100 mx-auto" src="assets/images/logo.png" alt="">
+                    </div>
+                    <div class="d-inline-flex mt-3 mx-auto">
+                        <div class="d-flex justify-content-start px-0 py-0">
+                            <p class="text-white text-center">
+                                EARTH OBLIVION is a Play-to-Earn Sci-Fi Action
+                                Fantasy MMORPG where you can Build, Battle,
+                                collect, earn, win. Display your NFTs while playing
+                                and socializing with your friends
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--About Us-->
+            <div class="col-lg-4 col-md-12 d-flex justify-content-center text-center text-lg-start mt-lg-0 mt-md-2">
+                <ul class="nav d-inline-flex flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link link-light fw-bold" href="#" style="font-size: 2rem; font-weight: bold">About
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="assets/file/Whitepaper_v1.2.pdf" target="_blank"
+                           style="font-size: 20px">Whitepaper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="mailto:hello@chronofi.io" style="font-size: 20px">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="assets/file/One%20Page.pdf" style="font-size: 20px">One
+                            Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link link-light"
+                                href="https://docs.google.com/presentation/d/1gQcdYlhFy7fewZoCgeNuOtAlQQUnAVorPAJlBwSp3LQ/edit"
+                                target="_blank"
+                                style="font-size: 20px"
+                        >
+                            Pitch Deck
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#" style="font-size: 20px">Documents</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--Join Our Community-->
+            <div class="col-12 col-lg-4 text-center text-lg-start mt-lg-0 mt-md-2 mx-auto">
+                <p class="fw-bold text-white mb-3 text-center text-lg-start"
+                   style="font-size: 2rem">
+                    Join Our Community
+                </p>
+                <div class="d-flex flex-column justify-content-center mx-auto align-self-center">
+                    <div class="row mb-3">
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://t.me/earthoblivion" class="mx-2 socmed-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35.568" height="36.081"
+                                     viewBox="0 0 35.568 36.081">
+                                    <rect width="35.568" height="36.081" rx="10" fill="#6F61B8"/>
+                                    <path d="M24.1.918,1.448,9.912c-1.546.639-1.537,1.527-.284,1.923L6.98,13.7,20.433,4.962c.636-.4,1.217-.184.74.253l-10.9,10.13h0l-.4,6.172a1.5,1.5,0,0,0,1.176-.605l2.824-2.828,5.875,4.468c1.083.614,1.861.3,2.131-1.033L25.734,2.8C26.129,1.175,25.13.437,24.1.918Z"
+                                          transform="translate(4.733 6.353)" fill="#fff"/>
+                                </svg>
+                            </a>
+                            <a href="https://discord.io/CHRONOFi" class="mx-2 socmed-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36.338" height="35.243"
+                                     viewBox="0 0 36.338 35.243">
+                                    <rect width="36.338" height="35.243" rx="10" fill="#6F61B8"/>
+                                    <path d="M21.295,23.385l-2.5-2.2-1.408-1.309L15.9,18.492l.612,2.152H3.339a2.39,2.39,0,0,1-2.382-2.4V2.536A2.39,2.39,0,0,1,3.339.142H18.913a2.39,2.39,0,0,1,2.382,2.394ZM15.759,13a3.679,3.679,0,0,1-2.1,1.38c.345.44.761.938.765.943a4.282,4.282,0,0,0,3.556-1.767,15.69,15.69,0,0,0-1.674-6.775,5.775,5.775,0,0,0-3.252-1.223h-.013l-.163.186a7.829,7.829,0,0,1,2.894,1.475,9.527,9.527,0,0,0-3.5-1.116,9.759,9.759,0,0,0-2.346.023.978.978,0,0,0-.164.017H9.732a8.766,8.766,0,0,0-2.638.734c-.418.192-.675.332-.686.336s0,0,0-.009A8.232,8.232,0,0,1,9.465,5.7l-.122-.139H9.335A5.778,5.778,0,0,0,6.084,6.781,15.572,15.572,0,0,0,4.41,13.556a4.208,4.208,0,0,0,3.548,1.766s.438-.533.779-.965A3.628,3.628,0,0,1,6.7,12.987c.009.006.13.088.325.2a.129.129,0,0,0,.048.037.325.325,0,0,0,.049.028,6.559,6.559,0,0,0,.9.423,9.605,9.605,0,0,0,1.713.5,8.388,8.388,0,0,0,1.554.147,7.972,7.972,0,0,0,1.457-.135,7.705,7.705,0,0,0,1.685-.5A6.745,6.745,0,0,0,15.759,13Zm-2.493-.522a1.3,1.3,0,1,1,1.183-1.291,1.242,1.242,0,0,1-1.184,1.291Zm-4.243,0a1.3,1.3,0,0,1,0-2.581,1.139,1.139,0,0,1,.817.349,1.308,1.308,0,0,1,.367.941,1.242,1.242,0,0,1-1.185,1.292Z"
+                                          transform="translate(8.043 5.858)" fill="#fff"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/earthoblivion_" class="mx-2 socmed-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35.388" height="35.452"
+                                     viewBox="0 0 35.388 35.452">
+                                    <rect width="35.388" height="35.452" rx="10" fill="#6F61B8"/>
+                                    <path d="M26.544,3.318a10.841,10.841,0,0,1-3.109.852,5.427,5.427,0,0,0,2.38-3,10.808,10.808,0,0,1-3.438,1.313,5.416,5.416,0,0,0-9.225,4.939A15.375,15.375,0,0,1,6.971,5.784,15.374,15.374,0,0,1,1.993,1.768,5.42,5.42,0,0,0,3.669,9,5.4,5.4,0,0,1,1.217,8.32v.07A5.416,5.416,0,0,0,5.56,13.7a5.453,5.453,0,0,1-2.445.093,5.417,5.417,0,0,0,5.058,3.758,10.864,10.864,0,0,1-6.724,2.319,11.047,11.047,0,0,1-1.292-.076,15.311,15.311,0,0,0,8.3,2.432,15.3,15.3,0,0,0,15.4-15.4c0-.232-.006-.467-.016-.7a11.007,11.007,0,0,0,2.7-2.8Z"
+                                          transform="translate(3.607 6.353)" fill="#fff"/>
+                                </svg>
+                            </a>
+                            <a href="https://medium.com/@earthoblivion" class="mx-2 socmed-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36.243" height="35.243"
+                                     viewBox="0 0 36.243 35.243">
+                                    <rect width="36.243" height="35.243" rx="10" fill="#6F61B8"/>
+                                    <path d="M22.543.142H1.159a.929.929,0,0,0-.93.93V22.456a.929.929,0,0,0,.93.93H22.543a.929.929,0,0,0,.93-.93V1.072A.929.929,0,0,0,22.543.142ZM19.289,6.119,18.1,7.255a.344.344,0,0,0-.134.331v8.359a.339.339,0,0,0,.134.331l1.162,1.136v.253H13.432v-.241l1.2-1.165c.119-.119.119-.154.119-.331V9.163L11.41,17.636h-.45L7.072,9.163v5.68a.773.773,0,0,0,.218.651l1.563,1.891v.253H4.413v-.253l1.563-1.891a.758.758,0,0,0,.2-.651V8.277a.563.563,0,0,0-.189-.485L4.6,6.119V5.866H8.917l3.33,7.307,2.932-7.3h4.111Z"
+                                          transform="translate(6.77 5.858)" fill="#fff"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/c/EarthOblivion" class="mx-2 socmed-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36.892" height="35.757"
+                                     viewBox="0 0 36.892 35.757">
+                                    <rect width="36.892" height="35.757" rx="10" fill="#6F61B8"/>
+                                    <path d="M27.663,3.859a3.542,3.542,0,0,0-.9-1.58A3.488,3.488,0,0,0,25.2,1.364C23.022.773,14.3.773,14.3.773s-8.722,0-10.9.588a3.482,3.482,0,0,0-1.563.914,3.536,3.536,0,0,0-.9,1.581,37.225,37.225,0,0,0-.582,6.8,37.179,37.179,0,0,0,.582,6.792A3.514,3.514,0,0,0,3.4,19.938c2.176.591,10.9.591,10.9.591s8.722,0,10.9-.591a3.509,3.509,0,0,0,2.465-2.495,37.179,37.179,0,0,0,.582-6.792A37.179,37.179,0,0,0,27.663,3.859ZM11.529,14.867V6.436l7.222,4.184Z"
+                                          transform="translate(3.646 7.227)" fill="#fff"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="container-fluid copyright d-flex align-items-center text-center justify-content-center">
+    <p class="fw-bold">&copy;2022 Earth Oblivion. ALL RIGHTS RESERVED</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!--<script src="assets/js/bootstrap.bundle.js"></script>-->
+<!--GSAP-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<!--<script src="assets/js/gsap.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+<!--<script src="assets/js/ScrollTrigger.min.js"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!--<script src="assets/js/jquery-3.6.0.js"></script>-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!--<script src="assets/js/flickity.pkgd.js"></script>-->
+<script src="assets/js/main.js"></script>
+
+<!--Active class on click-->
+<script>
+  window.addEventListener('hashchange', function () {
+    document.querySelector('.active').classList.remove('active')
+    document.querySelector('[href="' + window.location.hash + '"]').classList.add('active')
+  })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+        integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
+
+</body>
+</html>
