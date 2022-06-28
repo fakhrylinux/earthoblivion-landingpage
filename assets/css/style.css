@@ -167,6 +167,10 @@ a.dropdown-item {
     section#faq div.white-ruler {
         width: 0;
     }
+
+    .carousel-inner {
+        width: 100%;
+    }
 }
 
 /*Medium display 576px - 767px*/
@@ -231,6 +235,10 @@ a.dropdown-item {
         /*width: 100%;*/
         width: auto;
     }
+
+    .carousel-inner {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -292,6 +300,10 @@ a.dropdown-item {
     section#faq div.white-ruler {
         width: 100%;
         /*width: auto;*/
+    }
+
+    .carousel-inner {
+        width: 70%;
     }
 }
 
@@ -393,9 +405,9 @@ section.page-section#features .content {
     position: relative;
 }
 
-.carousel-inner {
-    width: 70%;
-}
+/*.carousel-inner {*/
+/*    width: 70%;*/
+/*}*/
 
 .carousel .carousel-item {
     transition: none;
