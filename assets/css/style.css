@@ -171,6 +171,19 @@ a.dropdown-item {
     .carousel-inner {
         width: 100%;
     }
+
+    /*.game-mode-container {*/
+    /*    overflow: auto;*/
+    /*}*/
+    /*.game-mode-pic {*/
+    /*    float: left;*/
+    /*    !*left: 0;*!*/
+    /*}*/
+
+    /*.game-mode-txt {*/
+    /*    float: right;*/
+    /*    !*right: 0;*!*/
+    /*}*/
 }
 
 /*Medium display 576px - 767px*/
