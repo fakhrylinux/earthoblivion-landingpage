@@ -519,22 +519,6 @@ section.page-section#roadmap {
     margin: 0 auto;
 }
 
-section#roadmap .q42021 {
-    display: none;
-    font-family: 'Goma O', sans-serif;
-    color: white;
-    background-color: green;
-    /*border-image: url("../images/roadmap/frame.png") round;*/
-    padding: 15px;
-    /*border-image-source: url("../images/roadmap/border.png");*/
-    border-image-slice: 30 fill ;
-    border: 10px solid transparent;
-}
-
-/*section#roadmap svg .roadmap-q4-2021 + .q42021 {*/
-/*    display: block;*/
-/*}*/
-
 section#features div.inner {
     top: 0;
 }
