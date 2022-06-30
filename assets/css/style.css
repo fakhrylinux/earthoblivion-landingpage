@@ -64,13 +64,6 @@ img {
     padding-right: 0;
 }
 
-/*section.page-section div.button-section {*/
-/*    width: auto;*/
-/*    !*height: 50px;*!*/
-/*    height: 3.125rem;*/
-/*    align-self: center;*/
-/*}*/
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -161,14 +154,8 @@ a.dropdown-item {
 
     section.page-section div.button-section {
         width: auto;
-        /*height: 50px;*/
         height: 1.5rem;
         align-self: center;
-    }
-
-    section.page-section div.button-section img {
-        /*height: 100%;*/
-        /*width: auto;*/
     }
 
     section#faq span.faq1 {
@@ -221,6 +208,31 @@ a.dropdown-item {
         font-size: 0.75rem;
         text-underline: none;
         letter-spacing: 1px;
+        box-shadow: yellow;
+    }
+
+    section#faq span.faq {
+        font-family: Montserrat, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    section#faq i.faq-arrow {
+        font-size: 1.5rem;
+    }
+
+    section#faq div.faq-question {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.625rem;
+        font-weight: bold;
+    }
+
+    section#faq div.faq-content {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 0.625rem;
+        line-height: 13.5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
     }
 }
 
@@ -316,6 +328,30 @@ a.dropdown-item {
         font-size: 1.125rem;
         text-underline: none;
         letter-spacing: 1px;
+    }
+
+    section#faq span.faq {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    section#faq i.faq-arrow {
+        font-size: 2.25rem;
+    }
+
+    section#faq div.faq-question {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.9375rem;
+        font-weight: bold;
+    }
+
+    section#faq div.faq-content {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 0.9375rem;
+        line-height: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
     }
 }
 
@@ -423,6 +459,30 @@ a.dropdown-item {
         font-size: 1.5rem;
         text-underline: none;
         letter-spacing: 2px;
+    }
+
+    section#faq span.faq {
+        font-family: Montserrat, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    section#faq i.faq-arrow {
+        font-size: 3rem;
+    }
+
+    section#faq div.faq-question {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    section#faq div.faq-content {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 1.25rem;
+        line-height: 27px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
     }
 }
 
@@ -553,6 +613,10 @@ button.btn:hover {
     text-underline: none;
 }
 
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+
 .carousel .carousel-inner .carousel-item img {
     width: 100%;
     height: auto;
@@ -655,39 +719,6 @@ section#faq {
     background-image: url("../images/background-faq.png");
     background-color: rgba(0, 0, 255, 0.1);
     background-size: cover;
-}
-
-section#faq p.faq-subtitle {
-    font-family: "Voice Activated BB", sans-serif;
-    font-size: 20px;
-}
-
-section#faq div.faq-subtitle span.faq {
-    font-family: Montserrat, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-section#faq div.faq-subtitle i.faq-arrow {
-    font-size: 3rem;
-}
-
-section#faq div.faq-question {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-section#faq div.faq-content {
-    font-family: "Segoe UI", sans-serif;
-    font-size: 1.25rem;
-    line-height: 27px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-}
-
-section#faq span:after {
-
 }
 
 section#contact p {
