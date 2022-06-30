@@ -64,11 +64,12 @@ img {
     padding-right: 0;
 }
 
-.button-section {
-    width: auto;
-    height: 50px;
-    align-self: center;
-}
+/*section.page-section div.button-section {*/
+/*    width: auto;*/
+/*    !*height: 50px;*!*/
+/*    height: 3.125rem;*/
+/*    align-self: center;*/
+/*}*/
 
 nav {
     display: flex;
@@ -160,6 +161,18 @@ a.dropdown-item {
         width: 8em;
     }
 
+    section.page-section div.button-section {
+        width: auto;
+        /*height: 50px;*/
+        height: 1.5rem;
+        align-self: center;
+    }
+
+    section.page-section div.button-section img {
+        /*height: 100%;*/
+        /*width: auto;*/
+    }
+
     section#faq span.faq1 {
         width: 100%;
     }
@@ -172,18 +185,16 @@ a.dropdown-item {
         width: 100%;
     }
 
-    /*.game-mode-container {*/
-    /*    overflow: auto;*/
-    /*}*/
-    /*.game-mode-pic {*/
-    /*    float: left;*/
-    /*    !*left: 0;*!*/
-    /*}*/
+    section.page-section#features .subtitle {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 
-    /*.game-mode-txt {*/
-    /*    float: right;*/
-    /*    !*right: 0;*!*/
-    /*}*/
+    section.page-section#features .content {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.75rem;
+    }
 }
 
 /*Medium display 576px - 767px*/
@@ -252,6 +263,17 @@ a.dropdown-item {
     .carousel-inner {
         width: 100%;
     }
+
+    section.page-section#features .subtitle {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    section.page-section#features .content {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.75rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -317,6 +339,17 @@ a.dropdown-item {
 
     .carousel-inner {
         width: 70%;
+    }
+
+    section.page-section#features .subtitle {
+        font-family: Montserrat, sans-serif;
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+
+    section.page-section#features .content {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.125rem;
     }
 }
 
@@ -392,18 +425,6 @@ section.page-section#features {
     /*opacity: 40%;*/
     background-size: cover;
 }
-
-section.page-section#features .subtitle {
-    font-family: Montserrat, sans-serif;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-section.page-section#features .content {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.125rem;
-}
-
 
 /*Characters Carousel*/
 .carousel /*slider */
