@@ -77,8 +77,6 @@ nav {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    /*background-color: #020E1C;*/
-    /*background-color: transparent;*/
     background-color: rgba(2, 14, 28, 0.5);
 }
 
@@ -92,15 +90,13 @@ nav {
     color: yellow;
 }
 
-.navbar-toggler {
-    /*border-color: rgb(255,102,203);*/
+.navbar-dark .navbar-toggler {
     border-color: transparent;
-    /*color: #FDA31E;*/
+    color: transparent;
 }
 
 .nav-link {
     font-family: "Segoe UI", sans-serif;
-    /*font-size: 1.5rem;*/
 }
 
 a.dropdown-item {
@@ -111,6 +107,8 @@ a.dropdown-item {
     border-bottom: 8px solid #97D4FC;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
+    transition: none;
+    padding: 8px;
 }
 
 @media screen and (max-width: 575px) {
@@ -195,6 +193,35 @@ a.dropdown-item {
         font-family: Montserrat, sans-serif;
         font-size: 0.75rem;
     }
+
+    .char-title {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .char-desc {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.75rem;
+        text-indent: 18px;
+    }
+
+    .carousel .charbox {
+        width: 6.225rem;
+        height: 1.6rem;
+        background-color: #9685f2;
+        border-radius: 2px;
+    }
+
+    button.btn {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 0.75rem;
+        text-underline: none;
+        letter-spacing: 1px;
+    }
 }
 
 /*Medium display 576px - 767px*/
@@ -274,6 +301,22 @@ a.dropdown-item {
         font-family: Montserrat, sans-serif;
         font-size: 0.75rem;
     }
+
+    .carousel .charbox {
+        width: 9.375rem;
+        height: 2.3rem;
+        background-color: #9685f2;
+        border-radius: 2px;
+    }
+
+    button.btn {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 1.125rem;
+        text-underline: none;
+        letter-spacing: 1px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -350,6 +393,36 @@ a.dropdown-item {
     section.page-section#features .content {
         font-family: Montserrat, sans-serif;
         font-size: 1.125rem;
+    }
+
+    .char-title {
+        font-family: Montserrat, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+
+    .char-desc {
+        font-family: Montserrat, sans-serif;
+        font-size: 1rem;
+        text-indent: 24px;
+    }
+
+    .carousel .charbox {
+        width: 12.5rem;
+        height: 3.125rem;
+        background-color: #9685f2;
+        border-radius: 2px;
+    }
+
+
+    button.btn {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5rem;
+        text-underline: none;
+        letter-spacing: 2px;
     }
 }
 
@@ -432,10 +505,6 @@ section.page-section#features {
     position: relative;
 }
 
-/*.carousel-inner {*/
-/*    width: 70%;*/
-/*}*/
-
 .carousel .carousel-item {
     transition: none;
     /*position: relative;*/
@@ -445,12 +514,10 @@ section.page-section#features {
 {
     position: relative;
     bottom: 0;
-    /*left: 0px;*/
     width: 100%;
     margin: 0;
     left: 0;
     right: 0;
-    /*width: 100%;*/
     display: flex; /* this is for indicators  */
 }
 
@@ -476,55 +543,19 @@ section.page-section#features {
     object-fit: cover;
 }
 
-.carousel .charbox {
-    width: 12.5rem;
-    height: 3.125rem;
-    background-color: #9685f2;
-    border-radius: 2px;
-}
-
 .carousel .charbox:hover {
-    width: 12.5rem;
-    height: 3.125rem;
     background-color: #B687FF;
     border-radius: 2px;
 }
 
-
-button.btn {
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    color: white;
-    font-size: 1.5rem;
-    text-underline: none;
-    letter-spacing: 2px;
-}
-
 button.btn:hover {
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
     color: white;
-    font-size: 1.5rem;
     text-underline: none;
-    letter-spacing: 2px;
 }
 
 .carousel .carousel-inner .carousel-item img {
     width: 100%;
     height: auto;
-}
-
-.char-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-
-.char-desc {
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    text-indent: 24px;
 }
 
 /*Characters Carousel end*/
