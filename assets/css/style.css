@@ -386,13 +386,6 @@ section.page-section#overview p {
     font-size: 20px;
 }
 
-
-section.page-section#ecosystem {
-    background-image: url("../images/ecosystem-background.png");
-    background-color: rgba(0, 0, 255, 0.1);
-    background-size: cover;
-}
-
 section.page-section#features {
     background-image: url("../images/background-gamemodes.png");
     background-color: rgba(0, 0, 255, 0.1);
