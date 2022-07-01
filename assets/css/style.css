@@ -718,7 +718,8 @@ section#advisor div.advisor {
 section#faq {
     background-image: url("../images/background-faq.png");
     background-color: rgba(0, 0, 255, 0.1);
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: auto;
 }
 
 section#contact p {
